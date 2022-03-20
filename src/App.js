@@ -44,6 +44,7 @@ function App() {
   };
   useEffect(() => {
     verifyPassword(password);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [password]);
   useEffect(() => {
     inputRef.current.focus();
