@@ -1,0 +1,83 @@
+$dark-bg: #1e293b;
+$darker-bg: #111827;
+$white-text: #f1f5f9;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111827;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+label {
+  width: 100%;
+  color: $white-text;
+  position: relative;
+}
+input {
+  width: 100%;
+  display: block;
+  margin-top: 0.5em;
+  padding: 0.8em;
+  background-color: $darker-bg;
+  color: $white-text;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+section {
+  display: flex;
+  gap: 2em;
+  margin-top: 2em;
+}
+.container {
+  max-width: 760px;
+  background-color: $dark-bg;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+
+  h5 {
+    color: $white-text;
+    font-size: 1.25rem;
+  }
+}
+
+button.showPassword {
+  border: none;
+  background: none;
+  color: $white-text;
+  position: absolute;
+  right: 0.75em;
+  top: calc(50% - 4px);
+  cursor: pointer;
+}
+.requirement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white-text;
+
+  .rule {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+.green {
+  color: #4ADE80;
+}
